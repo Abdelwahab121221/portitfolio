@@ -1,0 +1,118 @@
+/* ===============================
+    table of content  
+=================================== 
+
+1.title
+2.email field
+3.animation
+4.responsive
+*/
+.contact{
+    padding: 20px;
+}
+/* ===============================
+    title  
+=================================== 
+*/
+.contact .title .head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact .title i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--sub-title);
+}
+.contact .title h2{
+    color: var(--title);
+}
+.contact .title p{
+    color: var(--sub-title);
+    font-size: 16px;
+}
+/* ===============================
+    email field  
+=================================== 
+*/
+.contact .content{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 20%;
+}
+.contact form .email-field{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.contact form .email-field label{
+    color: var(--sub-title);
+    font-size: 14px;
+    flex-grow: 1;
+    width: 21%;
+}
+.contact form .message-field{
+    display: flex;
+}
+.contact form .message-field textarea{
+    resize: none;
+}
+.contact form .message-field label{
+    color: var(--sub-title);
+    font-size: 14px;
+    flex-grow: 1;
+    width: 21%;
+}
+.contact form .email-field input,
+.contact form .message-field textarea{
+    outline: none;
+    padding: 5px;
+    color: var(--sub-title);
+    background-color: var(--secondary);
+    border: 2px solid rgb(63 63 70);
+    margin-left: 10px;
+    width: 100%;
+}
+.contact form .email-field input::placeholder,
+.contact form .message-field textarea::placeholder{
+    transition: 0.3s;
+}
+.contact form .email-field input:focus::placeholder,
+.contact form .message-field textarea:focus::placeholder{
+    opacity: 0;
+}
+.contact form input[type="submit"]{
+    width: fit-content;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: var(--title);
+    font-size: 14px;
+    border-radius: 7px;
+    background-color: var(--primary);
+}
+.contact-message{
+    color: var(--title);
+}
+@media (max-width:767px) {
+    .contact .content label:first-of-type{
+        display: flex;
+    }
+    .contact .content label:last-of-type textarea{
+        width: 200px;
+    }
+}
+@media (max-width:991px) {
+    .animation{
+        display: none;
+    }
+}

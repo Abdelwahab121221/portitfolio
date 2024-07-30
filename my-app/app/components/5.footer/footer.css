@@ -1,0 +1,27 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul.footer{
+    display: flex;
+}
+ul.footer .footer-li{
+    margin: 10px 10px;
+    transition: 0.3s;
+    font-size: 12px;
+}
+ul.footer .footer-li:hover{
+    scale: 1.2;
+}
+ul.footer .footer-li:hover a{
+    color: var(--blue);
+}
+ul.footer .footer-li a{
+    color: var(--title);
+}
+span{
+    margin-left: 10px;
+    color: var(--sub-title);
+    margin-right: 10px;
+}

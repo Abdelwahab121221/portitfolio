@@ -1,0 +1,29 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+  background-color: var(--secondary);
+  border: 2px solid var(--border);
+}
+.line {
+  border-bottom: 1px solid var(--border);
+  margin: 1rem 0;
+}
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Big */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
